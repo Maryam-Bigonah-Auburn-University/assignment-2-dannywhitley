@@ -153,7 +153,7 @@ int getCenturyValue(int year)
 
     // Uses static type cast to ensure that the variable is type int no matter what
     // centuryis computed by using integer division
-    century = static_cast<int>(year) / 100;
+    century = year / 100;
     
     // Determines the centuryValue by subtracting the remainder of the century divided by 4 from 3
     // then multiplying by 2
@@ -170,10 +170,10 @@ int getYearValue(int year)
     int yearsThisCentury, numberLeapYears;
 
     // Calculates the number of years passed in this century using the remainder of integer division
-    yearsThisCentury = static_cast<int>(year) % 100;
+    yearsThisCentury = year % 100;
 
     // Calculates the number of leap years passed so far this century
-    numberLeapYears = (yearsThisCentury / 4);
+    numberLeapYears = yearsThisCentury / 4;
 
     // Returns a value based on the sum of the number of years and the leaps years passed this century 
     return(yearsThisCentury + numberLeapYears);
