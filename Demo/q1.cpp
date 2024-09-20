@@ -6,7 +6,7 @@ using namespace std;
 bool isLeapYear(int year);  // Determines if the year entered is a leap year
 int getCenturyValue(int year); // Determines the centrury value from the first two digits of the year entered
 int getYearValue(int year); // Determines the year value based on the last two digits of the year entered
-int getMonthValue(int month, int year); // Determines the month value depending on the mon th entered and if it is a leap year
+int getMonthValue(int month, int year); // Determines the month value depending on the month entered and if it is a leap year
 
 // Can handle months entered outside of the range (1-12) and days outside of the range of the month entered, tested with dates as far back as 1990
 int main()
